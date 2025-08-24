@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tentang-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.tentang-wrapper p {
+    text-indent: 40px;
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tentang-wrapper img {
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    object-fit: cover;
+    margin-top: -30px;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 70px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoimg {
+    width: 50px;
+    height: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background-image: url("pexels-padrinan-19670.jpg");
+    background-size: cover;      
+    background-position: center;   
+    min-height: 450px;              
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.cta-button {
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #555;        
+    transform: scale(1.05);   
+}
+
+
+section {
+    padding: 60px 0;
+    border-bottom: #ccc 1px solid;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.friend-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+.friend-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.friend-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 60px;
+    margin-bottom: 15px;
+}
+
+section .container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  .tentang-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .tentang-wrapper p {
+    text-align: justify;
+    text-indent: 0;
+  }
+
+  .friend-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .friend-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 2.2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navi ul {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .navi li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .logoimg {
+    width: 40px;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 0.95em;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header style="background-color: #0779e4;">
+    <div class="container">
+        <h1 class="logo">
+            <img src="1977fd8b88e70e26b9ffa26c0d994030.png" alt="Logo" class="logoimg"> Website Fajar
+        </h1>
+
+        <nav class="navi">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#teman">My Project</a></li>
+            <li><a href="#kontak">Contact</a></li>
+        </nav>
+    </div>
+  </header>
+
+  <section id="teman">
+            <div class="container">
+            <h3>My Project</h3>
+            <div class="friend-list">
+            <div class="friend-item">
+                <img src="Screenshot 2025-08-24 090121.png" alt="Friend Photo">
+                <h4>Rock Paper Scissors</h4>
+                <p>This is my first game making project with my friends. Here is the code.</p>
+                <a href="https://drive.google.com/drive/folders/1VEW2iR6d_AgaEYm7u2q8WcQM-n7-Fxcg" target="_blank" style="text-decoration: none;">
+                    CODE
+                </a>
+            </div>
+            <div class="friend-item">
+                <img src="WhatsApp Image 2025-08-24 at 09.18.24_f0c5d500.jpg" alt="Friend Photo">
+                <h4>Making a Doormat</h4>
+                <p>This is my second project with my friends, which is making doormats for science lessons.</p>
+            </div>
+            <div class="friend-item">
+                <img src="WhatsApp Image 2025-08-24 at 09.23.25_aee193b8.jpg" alt="Friend Photo">
+                <h4>Cooking Stewed Jengkol</h4>
+                <p>This is my third project with my friends, which is making jengkol stew in English class.</p>
+            </div>
+            <div class="friend-item">
+                <img src="download.jpg" alt="Friend Photo">
+                <h4>Cheat Tutorial on Subway Surfer</h4>
+                <p>This is a cheat tutorial video in Subway Surfer.</p>
+                <a href="https://youtube.com/shorts/dotY69rpCbE?feature=share" target="_blank" style="text-decoration: none;">
+                    LINK VIDEO
+                </a>
+            </div>
+            </div>
+            </div>
+        </section>
+</body>
+</html>

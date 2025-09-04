@@ -57,7 +57,7 @@ header .container {
 }
 
 header a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -93,22 +93,22 @@ header li {
 .hero {
     text-align: center;
     padding: 150px 20px;
-    background-image: url("pexels-padrinan-19670.jpg");
+    background-image: url("ea027b12925811664f87b5830ff88e3f.jpg");
     background-size: cover;      
     background-position: center;   
-    min-height: 450px;              
+    min-height: 450px;
 }
 
 .hero h2 {
     font-size: 3em;
     margin-bottom: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-.hero p {
+.hero p {     
     font-size: 1.2em;
     margin-bottom: 16px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .cta-button {
